@@ -44,6 +44,10 @@ app.get('/search', (req, res) => {
     });
 });
 
+app.get('/books/', (req, res) => {
+  res.redirect('/');
+});
+
 app.get('/books/:id', (req, res) => {
   const id = req.params.id;
 

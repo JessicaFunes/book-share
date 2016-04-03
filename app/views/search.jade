@@ -18,9 +18,15 @@ body
 					h1 Resultados de #{search} (#{books.length}):
 					div
 					- each book in books
-						div
-							h3
-								a(href="/books/#{book.id}")= book.name
-							p Vendedor: 
-								a(href="/profile/#{book.seller.url}")= book.seller.name
-							p #{book.seller.price} USD.
+						div(class='book')
+							div(class='book-cover')
+							div(class='book-description')
+								h3(class='book-descriptionTitle')
+									a(class='book-descriptionLink', href="/books/#{book.id}")= book.name
+								p Vendedor: 
+									a(href="/profile/#{book.seller.url}")= book.seller.name
+								p
+									strong $#{book.seller.price} USD.
+								button(class='book-descriptionButton') Contactar
+
+		include components/footer
