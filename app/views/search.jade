@@ -7,3 +7,26 @@ head
 	link(rel='stylesheet', type='text/css', href='css/styles.css')
 body
 	main
+		include components/nav
+
+		article(class='results')
+			div(class='results-container')
+				
+				if books.length == 0
+					h1 No se encontraron resultados para "#{search}" :v
+				else
+					h1 Resultados de #{search} (#{books.length}):
+					div
+					- each book in books
+						div(class='book')
+							div(class='book-cover')
+							div(class='book-description')
+								h3(class='book-descriptionTitle')
+									a(class='book-descriptionLink', href="/books/#{book.id}")= book.name
+								p Vendedor: 
+									a(href="/profile/#{book.seller.url}")= book.seller.name
+								p
+									strong $#{book.seller.price} USD.
+								button(class='book-descriptionButton') Contactar
+
+		include components/footer

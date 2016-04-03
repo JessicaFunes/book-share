@@ -1,7 +1,6 @@
 /*!
  * Navigation Component
  */
-
 .navigation {
 	margin: 0;
 	padding: 1rem 0;
@@ -11,10 +10,15 @@
 	align-content: center;
 	align-items: center;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	margin: 0 auto;
 	padding: 0;
 	width: 1000px;
+}
+.navigation-logo,
+.navigation-logoImage {
+	height: auto;
+	width: 100px;
 }
 .navigation-label {
 	color:rgb(80,80,80);
@@ -22,6 +26,18 @@
 	margin-right: 0.5rem;
 }
 .navigation-search {
+}
+.navigation-searchInput {
+	border: 1px solid rgb(200, 200, 200);
+	border-radius: 0.25rem;
+	margin: 0 0.25rem;
+	padding: 0.5rem;
+}
+.navigation-searchButton {
+	background-color: rgb(220, 220, 220);
+	border: 1px solid rgb(200, 200, 200);
+	border-radius: 0.25rem;
+	padding: 0.5rem;
 }
 /*!
  * Carrousel Component
@@ -83,12 +99,10 @@
 	height: 200px;
 	width: 150px;
 }
-
 /*!
  * Category component (michell)
  * ======================================
  */
-
 .category {
 	margin: 4rem;
 	padding: 0;
@@ -121,9 +135,6 @@
 	text-decoration: none;
 	width: 490px;
 }
-.category-bigLink:hover {
-	text-decoration: underline;
-}
 .category-middleLink {
 	border-radius: 0.5rem;
 	color: rgb(250, 250, 250);
@@ -139,9 +150,6 @@
 	vertical-align: top;
 	width: 490px;
 }
-.category-middleLink:hover {
-	text-decoration: underline;
-}
 .category-littleLink {
 	border-radius: 0.5rem;
 	color: rgb(250, 250, 250);
@@ -153,7 +161,9 @@
 	text-decoration: none;
 	width: 242px;
 }
-.category-littleLink:hover {
+.category-bigLink:hover,
+.category-littleLink:hover,
+.category-middleLink:hover {
 	text-decoration: underline;
 }
 .category-littleLink:first-child {
@@ -177,11 +187,18 @@
 /*!
  * Hero component
  */
-
 .hero {
-	background-color: rgb(80, 80, 80);
 	margin: 0;
-	padding: 6rem 0;
+	padding: 10rem 0;
+	text-shadow: 2px 2px 2px rgb(100, 100, 100);
+}
+.hero.one {
+	background: url(../img/hero-one.jpg) no-repeat center center;
+  background-size: cover;
+}
+.hero.two {
+	background: url(../img/hero-two.jpg) no-repeat center center;
+	background-size: cover;
 }
 .hero-text {
 	color: rgb(250, 250, 250);
@@ -189,14 +206,60 @@
 	text-shadow: 1px 0 1px rgb(100, 100, 100);
 	text-align: center;
 }
-
 /*!
  * Footer component
  */
-
 .footer {
 	background-color: rgb(60, 60, 60);
 	height: 40px;
 	margin: 0 auto;
 	padding: 0;
+}
+/*!
+ * Results component
+ */
+.results {
+	margin: 0 auto 2rem 0;
+	padding: 0;
+}
+.results-container {
+	margin: 0 auto;
+	padding: 0;
+	width: 1000px;
+}
+/*!
+ * Book Component
+ */
+.book {
+	border: 1px solid rgb(230, 230, 230);
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 1rem;
+}
+.book:nth-child(2n+1) {
+	background-color: rgb(245, 245, 245);
+}
+.book-cover {
+	background: url(../img/covers/traveler-one.jpg) center;
+	box-shadow: 1px 0 4px rgb(80, 80, 80);
+	display: inline-block;
+	height: 140px;
+	width: 110px;
+}
+.book-description {
+	display: inline-block;
+	margin: 0;
+	padding: 0 1rem;
+	vertical-align: top;
+}
+.book-descriptionTitle {
+	margin: 0;
+}
+.book-descriptionButton {
+	background-color: rgb(100, 150, 200);
+	border: 1px solid rgb(80, 130, 180);
+	border-radius: 0.25rem;
+	color: rgb(250, 250, 250);
+	font-weight: bold;
+	padding: 0.5rem;
 }

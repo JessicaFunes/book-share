@@ -7,13 +7,7 @@ head
 	link(rel='stylesheet', type='text/css', href='css/styles.css')
 body
 	main
-		nav(class='navigation')
-			div(class='navigation-container')
-				label(class='navigation-label')	¿Qué estás buscando?
-
-				form(class='navigation-search', action='/search', method='GET')
-					input(class='navigation-searchInput', name='q', type='text')
-					input(class='navigation-searchButton', type='submit', value='Buscar')
+		include components/nav
 
 		article(class='carrousel')
 			div(class='carrousel-container')
@@ -22,23 +16,40 @@ body
 					a(class='carrousel-arrow' href='#')
 					ul(class='carrousel-books')
 						li(class='carrousel-book')
-							a(class='carrousel-bookLink')
+							a(class='carrousel-bookLink', href='#')
 								img(class='carrousel-bookImage')
 							p(class='carrousel-bookName') Traveller
 						li(class='carrousel-book')
-							a(class='carrousel-bookLink')
+							a(class='carrousel-bookLink', href='#')
 								img(class='carrousel-bookImage')
 							p(class='carrousel-bookName') World English
 						li(class='carrousel-book')
-							a(class='carrousel-bookLink') 
+							a(class='carrousel-bookLink', href='#') 
 								img(class='carrousel-bookImage')
 							p(class='carrousel-bookName') Fast
 						li(class='carrousel-book')
-							a(class='carrousel-bookLink')
+							a(class='carrousel-bookLink', href='#')
 								img(class='carrousel-bookImage')
 							p(class='carrousel-bookName') Canek
 						li(class='carrousel-book')
-							a(class='carrousel-bookLink') 
+							a(class='carrousel-bookLink', href='#') 
 								img(class='carrousel-bookImage')
-							p(class='carrousel-bookName') Traveller
-					a(class='carrousel-arrow')
+							p(class='carrousel-bookName') Speed out
+					a(class='carrousel-arrow', href='#')
+		div(class='hero one')
+			h3(class='hero-text') ¡Compra y vende libros de segunda mano!
+		article(class='category')
+			div(class='category-container')
+				h2(class='category-title') Categorias
+				div(class='category-half')
+					a(class='category-bigLink', href='#') Matematicas
+				div(class='category-half')
+					div
+						a(class='category-middleLink', href='#') Inglés
+					div
+						a(class='category-littleLink', href='#') Español
+						a(class='category-littleLink', href='#') Física
+		div(class='hero two')
+			h3(class='hero-text') ¡Encuentra el libro que estás buscando!
+		
+		include components/footer
