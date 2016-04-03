@@ -1,0 +1,11 @@
+# modules and dependencies
+node_modules
+
+# auto-save files (gedit)
+*~
+
+# auto-save files (vim)
+*.swp
+
+# mac bullshit
+.DS_Store
