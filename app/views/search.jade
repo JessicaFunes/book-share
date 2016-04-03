@@ -7,3 +7,20 @@ head
 	link(rel='stylesheet', type='text/css', href='css/styles.css')
 body
 	main
+		include components/nav
+
+		article(class='results')
+			div(class='results-container')
+				
+				if books.length == 0
+					h1 No se encontraron resultados para "#{search}" :v
+				else
+					h1 Resultados de #{search} (#{books.length}):
+					div
+					- each book in books
+						div
+							h3
+								a(href="/books/#{book.id}")= book.name
+							p Vendedor: 
+								a(href="/profile/#{book.seller.url}")= book.seller.name
+							p #{book.seller.price} USD.

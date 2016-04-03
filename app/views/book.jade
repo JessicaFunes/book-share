@@ -1,0 +1,17 @@
+doctype html
+html
+head
+  meta(charset='UTF-8')
+  title Bookshares
+  link(rel='stylesheet', type='text/css', href='/css/normalize.css')
+  link(rel='stylesheet', type='text/css', href='/css/styles.css')
+body
+  main
+    include components/nav
+
+    article(class='results')
+      div(class='results-container')
+        h3= book.name
+        p Vendedor: 
+          a(href="/profile/#{book.seller.url}")= book.seller.name
+        p #{book.seller.price} USD.

@@ -23,6 +23,18 @@
 }
 .navigation-search {
 }
+.navigation-searchInput {
+	border: 1px solid rgb(200, 200, 200);
+	border-radius: 0.25rem;
+	margin: 0 0.25rem;
+	padding: 0.5rem;
+}
+.navigation-searchButton {
+	background-color: rgb(220, 220, 220);
+	border: 1px solid rgb(200, 200, 200);
+	border-radius: 0.25rem;
+	padding: 0.5rem;
+}
 /*!
  * Carrousel Component
  */
@@ -83,12 +95,10 @@
 	height: 200px;
 	width: 150px;
 }
-
 /*!
  * Category component (michell)
  * ======================================
  */
-
 .category {
 	margin: 4rem;
 	padding: 0;
@@ -160,11 +170,9 @@
 .category-littleLink:last-child {
 	background-color: rgb(200, 150, 80);
 }
-
 /*!
  * Hero component
  */
-
 .hero {
 	margin: 0;
 	padding: 10rem 0;
@@ -184,14 +192,24 @@
 	text-shadow: 1px 0 1px rgb(100, 100, 100);
 	text-align: center;
 }
-
 /*!
  * Footer component
  */
-
 .footer {
 	background-color: rgb(60, 60, 60);
 	height: 40px;
 	margin: 0 auto;
 	padding: 0;
+}
+/*!
+ * Results component
+ */
+.results {
+	margin: 0 auto;
+	padding: 0;
+}
+.results-container {
+	margin: 0 auto;
+	padding: 0;
+	width: 1000px;
 }
