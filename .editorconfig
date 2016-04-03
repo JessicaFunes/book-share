@@ -1,0 +1,14 @@
+# top-most editor config file
+root = true
+
+# General rules
+[*]
+end_of_line = lf
+insert_final_newline = true
+indent_style = tab
+indent_size = 4
+
+# JavaScript rules
+[**.js]
+indent_style = space
+indent_size = 2
