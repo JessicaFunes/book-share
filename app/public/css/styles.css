@@ -122,9 +122,6 @@
 	text-decoration: none;
 	width: 490px;
 }
-.category-bigLink:hover {
-	text-decoration: underline;
-}
 .category-middleLink {
 	background-color: rgb(80, 200, 150);
 	border-radius: 0.5rem;
@@ -141,9 +138,6 @@
 	vertical-align: top;
 	width: 490px;
 }
-.category-middleLink:hover {
-	text-decoration: underline;
-}
 .category-littleLink {
 	border-radius: 0.5rem;
 	color: rgb(250, 250, 250);
@@ -155,7 +149,9 @@
 	text-decoration: none;
 	width: 242px;
 }
-.category-littleLink:hover {
+.category-bigLink:hover,
+.category-littleLink:hover,
+.category-middleLink:hover {
 	text-decoration: underline;
 }
 .category-littleLink:first-child {
@@ -170,9 +166,17 @@
  */
 
 .hero {
-	background-color: rgb(80, 80, 80);
 	margin: 0;
-	padding: 6rem 0;
+	padding: 10rem 0;
+	text-shadow: 2px 2px 2px rgb(100, 100, 100);
+}
+.hero.one {
+	background: url(../img/hero-one.jpg) no-repeat center center;
+  background-size: cover;
+}
+.hero.two {
+	background: url(../img/hero-two.jpg) no-repeat center center;
+	background-size: cover;
 }
 .hero-text {
 	color: rgb(250, 250, 250);
