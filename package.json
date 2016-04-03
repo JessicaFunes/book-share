@@ -12,6 +12,16 @@
   "dependencies": {
     "body-parser": "1.15.0",
     "express": "4.13.4",
-    "jade": "1.11.0"
-  }
+    "jade": "1.11.0",
+    "morgan": "1.7.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishelashala/book-share.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mishelashala/book-share/issues"
+  },
+  "homepage": "https://github.com/mishelashala/book-share#readme"
 }

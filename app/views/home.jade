@@ -10,9 +10,10 @@ body
 		nav(class='navigation')
 			div(class='navigation-container')
 				label(class='navigation-label')	¿Qué estás buscando?
-				form(class='navigation-search')
-					input(class='navigation-searchInput', name="q", type='text')
-					input(class='navigation-searchButton', type='submit')
+
+				form(class='navigation-search', action='/search', method='GET')
+					input(class='navigation-searchInput', name='q', type='text')
+					input(class='navigation-searchButton', type='submit', value='Buscar')
 
 		article(class='carrousel')
 			div(class='carrousel-container')
@@ -21,23 +22,23 @@ body
 					a(class='carrousel-arrow' href='#')
 					ul(class='carrousel-books')
 						li(class='carrousel-book')
-							a(class='carrousel-bookLink', href='')
-								img(class='carrousel-bookImage' src='')
+							a(class='carrousel-bookLink')
+								img(class='carrousel-bookImage')
 							p(class='carrousel-bookName') Traveller
 						li(class='carrousel-book')
-							a(class='carrousel-bookLink', href='')
-								img(class='carrousel-bookImage' src='')
+							a(class='carrousel-bookLink')
+								img(class='carrousel-bookImage')
 							p(class='carrousel-bookName') World English
 						li(class='carrousel-book')
-							a(class='carrousel-bookLink', href='') 
-								img(class='carrousel-bookImage' src='')
+							a(class='carrousel-bookLink') 
+								img(class='carrousel-bookImage')
 							p(class='carrousel-bookName') Fast
 						li(class='carrousel-book')
-							a(class='carrousel-bookLink', href='')
-								img (class='carrousel-bookImage', src='')
+							a(class='carrousel-bookLink')
+								img(class='carrousel-bookImage')
 							p(class='carrousel-bookName') Canek
 						li(class='carrousel-book')
-							a(class='carrousel-bookLink', href='') 
-								img(class='carrousel-bookImage', src='')
+							a(class='carrousel-bookLink') 
+								img(class='carrousel-bookImage')
 							p(class='carrousel-bookName') Traveller
-					a(class='carrousel-arrow', href='')
+					a(class='carrousel-arrow')
