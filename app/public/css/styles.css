@@ -73,3 +73,86 @@
 	height: 200px;
 	width: 150px;
 }
+/*!
+ * Categories Component
+ */
+
+
+.categories {
+	margin: 0 auto;
+	padding: 0;
+
+}
+.categories-container {
+	margin: 0 auto;
+	padding: 0;
+	padding-top: 100px;
+	width: 1000px;
+}
+.cat-containerLeft {
+	margin: 0px;
+	padding: 0px;
+	width: 469px;
+	float: left;
+}
+
+.cat-link {
+	margin-left: 15px;
+}
+#cat-art {
+	background-color: red;
+	height: 371px;
+	width: 464px;
+}
+#cat-fiction {
+	background-color: red;
+	display: inline-block;
+	height: 209px;
+	width: 231px;	
+}
+#cat-psico {
+	background-color: red;
+	display: inline-block;
+	height: 209px;
+	width: 231px;
+}
+.cat-containerRight {
+	width: 466px;
+	float: right;	
+}
+#cat-ciencia {
+	background-color: green;
+	display: inline-block;
+	height: 230px;
+	width: 231px;
+
+}
+#cat-historia {
+	background-color: green;
+	display: inline-block;
+	height: 230px;
+	width: 231px;
+
+}
+#cat-novela {
+	background-color: green;
+	display: inline-block;
+	height: 109px;
+	width: 231px;
+}
+#cat-ingles {
+	background-color: blue;
+	display: inline-block;
+	height: 351px;
+	width: 231px;
+}
+#cat-mate {
+	background-color: blue;
+	display: inline-block;
+	height: 230px;
+	width: 231px;
+}
+.cat-containerExtraright {
+	width: 
+
+}
